@@ -1,0 +1,28 @@
+*{
+   /* color: blue;*/
+}
+body {
+background-color:rgb(243, 137, 232);
+width: 50vw;
+font-size: 24pt;
+}
+h1{
+font-size: 2em;
+}
+p {
+ /*  color:white;*/
+  /*width: 50%;*/
+  background-color:rgb(137, 243, 243);
+}
+.myclass{
+    color: red;
+}
+.green{
+    color: green;
+}
+#first{
+    font-weight: bold;
+}
+a:hover{
+    color: red;
+}
