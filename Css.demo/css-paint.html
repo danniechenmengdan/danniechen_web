@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Positioning Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="css-positioning-demo.css" />
+    <link rel="stylesheet" href="style-paint.css" />
+<style>
+
+    *{margin:0;
+    padding:0;}
+
+#ball{
+    width:150px;
+    height: 140px;
+    border-radius: 50%;
+position: absolute;
+top: 340px;
+left: 295px;
+background-color: forestgreen;
+
+}
+#bottom{
+    width:0;
+    height: 0;
+    position: absolute;
+    bottom: 140px;
+    left: 320px;
+border-bottom: 200px solid forestgreen;
+border-right: 50px solid transparent;
+border-left: 50px solid transparent;
+border-top: 0px;
+}
+#top{
+    width:0;
+    height: 0;
+    position: absolute;
+    bottom: 200px;
+    left: 300px;
+border-top: 300px solid forestgreen;
+border-right: 70px solid transparent;
+border-left:70px solid transparent;
+border-bottom:0px;
+
+}
+#orange-1{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(255, 145, 0);
+    position: absolute;
+    bottom: 140px;
+    left: 450px;
+
+}
+#orange-2{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(247, 172, 33);
+    position: absolute;
+    bottom: 120px;
+    left: 480px;
+    z-index: 4;
+
+}
+#orange-3{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(252, 188, 69);
+    position: absolute;
+    bottom: 200px;
+    left: 480px;
+    z-index: 5;
+
+}
+#orange-4{
+    width: 100px;
+    height: 90px;
+    border-radius: 30% 60%;
+    background-color: rgb(240, 150, 4);
+    position: absolute;
+    bottom: 100px;
+    left: 700px;
+    
+
+}
+#sticks1{
+    width: 12px;
+    height: 300px;
+    background-color: rgb(61, 30, 30);
+    position: absolute;
+    z-index: -10;
+    left:350px;
+    transform: skew(5deg);
+}
+#sticks2{
+    width: 12px;
+    height: 300px;
+    background-color: rgb(61, 30, 30);
+    position: absolute;
+    z-index: -10;
+    left: 335px;
+    transform: skew(8deg);
+}
+#sticks3{
+    width: 12px;
+    height: 300px;
+    background-color: rgb(61, 30, 30);
+    position: absolute;
+    z-index: -10;
+    left: 365px;
+    transform: skew(-5deg);
+}
+#sticks4{
+    width: 12px;
+    height: 300px;
+    background-color: rgb(61, 30, 30);
+    position: absolute;
+    z-index: -10;
+    left: 378px;
+    transform: skew(-9deg);
+}
+#sticks5{
+    width: 12px;
+    height: 300px;
+    background-color: rgb(61, 30, 30);
+    position: absolute;
+    z-index: -10;
+    left: 390px;
+    transform: skew(-10deg);
+}
+#mouth{
+    width:60px;
+    height: 20px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 280px;
+    bottom: 350px;
+}
+#neck{width: 40px;
+height: 40px;
+background-color: aquamarine;
+position: absolute;
+    left: 295px;
+    bottom: 310px;
+}
+#shoulder{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-bottom: 50px solid aquamarine;
+border-right: 70px solid transparent;
+border-left: 70px solid transparent;
+border-top: 0px;
+left: 260px;
+bottom: 290px;
+}
+#glassbody{
+    width:100px;
+    height: 130px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 260px;
+    bottom: 160px;
+}
+#papper1{width: 30px;
+height: 20px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+bottom: 175px;
+    left: 466px;
+
+}
+#papper2{width: 30px;
+height: 20px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+bottom: 160px;
+    left: 510px;
+    transform: skew(-30deg);
+z-index: 7;
+}
+/*#center{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(0, 4, 255);
+    left: 363px;
+    bottom:255px;
+    z-index: 8;
+    
+}*/
+#center{
+    width: 20px;
+    height: 20px;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  left: 200px;
+  position: relative;
+  left: 363px;
+  bottom: -401px;
+  z-index: 9;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+
+#piece1{width: 80px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    /*background-color: rgb(252, 253, 152);*/
+    left: 365px;
+    bottom:258px;
+    z-index: 7;
+   animation-name: colorChange;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background-color: forestgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+#piece2{width: 80px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+    /*background-color: rgb(252, 253, 152);*/
+    left: 332px;
+    bottom:290px;
+    z-index: 7;
+   animation-name: colorChange;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background-color: forestgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+#piece3{width: 80px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(180deg);
+    /*background-color: rgb(252, 253, 152);*/
+    left: 305px;
+    bottom:258px;
+    z-index: 7;
+   animation-name: colorChange;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background-color: forestgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+#piece4{width: 80px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(270deg);
+    /*background-color: rgb(252, 253, 152);*/
+    left: 333px;
+    bottom:220px;
+    z-index: 7;
+   animation-name: colorChange;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+  0% {
+    background-color: forestgreen;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+
+
+</style>
+
+
+
+ </head>
+  
+ <body>
+    <div id="flower">
+        <div id="center"></div>
+        <div id="piece1"></div>
+        <div id="piece2"></div>
+        <div id="piece3"></div>
+        <div id="piece4"></div>
+    </div>
+<div id="glass">
+    <div id="mouth"></div>
+    <div id="neck"></div> 
+    <div id="glassbody"></div> 
+    <div id="shoulder"></div> 
+
+</div>
+
+<div id="vase">
+    <div id="sticks1"></div>
+    <div id="sticks2"></div>
+     <div id="sticks3"></div> 
+     <div id="sticks4"></div>
+     <div id="sticks5"></div>
+    <div id="ball"></div> 
+     <div id="top"></div>  
+     <div id="bottom"></div>
+</div>
+
+<div id="orange">
+    <div id="orange-1"></div>
+    <div id="orange-2"></div> 
+     <div id="orange-3"></div>  
+     <div id="orange-4"></div>
+<div id="papper1"></div>
+<div id="papper2"></div>
+</div>
+
+</body>

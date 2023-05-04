@@ -1,0 +1,39 @@
+h1{
+    background-color: black;
+    font-size: 60pt;
+    color: white ;
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    font-size: 120pt;
+    font-style: italic;
+}
+a{
+    color: rgb(255, 255, 255);
+    
+}
+a:hover{
+       font-weight: bold;}
+
+table th{
+    font-size: 24pt;
+}
+th
+{
+    background-color:black;
+    color:white;
+}
+.list:hover{font-weight: 300;}
+li{
+    font-weight: 700;
+font-size: 180pt;
+font-style: italic;
+}
+p:hover{ font-weight: bolder;
+
+}
+button{color: black;}

@@ -1,0 +1,6 @@
+#border{
+    box-sizing: border-box;
+    position: fixed;/*固定在屏幕，static相對*/
+    top:100px
+
+}

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-size: 120pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+th
+{
+    background-color:black;
+    color:white;
+}
+a{ color: white;}
+p{
+    text-align: center;
+    font-size: larger;
+    line-height: 48px;
+}
