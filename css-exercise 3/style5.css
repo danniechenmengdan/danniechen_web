@@ -1,0 +1,19 @@
+th
+{
+    background-color:black;
+    color:white;
+}
+a{
+    color: white;
+}
+h1{
+    font-size: 124pt;
+ }
+ .number {
+    position: absolute;
+    right: 40px;
+    bottom: 110pt;
+    font-size: 140pt;
+    font-style: italic;}
+   
+   li{font-size: 48pt;}

@@ -1,0 +1,26 @@
+p{
+   font-size: 120pt;
+}
+table th{
+    font-size: 24pt;
+}
+th
+{
+    background-color:black;
+    color:white;
+}
+.number {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    font-size: 120pt;
+    font-style: italic;
+}
+h1{
+    background-color: black;
+    font-size: 60pt;
+    color: white ;
+    position: relative;
+}
+a{
+color: white;}
